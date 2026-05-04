@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ReCert | Automated Certificate Lifecycle Management</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #020617, #0f172a, #1e3a8a);
+      color: white;
+      padding: 80px 24px;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 64px;
+      margin: 0;
+      letter-spacing: -2px;
+    }
+
+    header h2 {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 12px 0;
+      color: #dbeafe;
+    }
+
+    header p {
+      max-width: 780px;
+      margin: 20px auto;
+      font-size: 18px;
+      color: #e2e8f0;
+    }
+
+    .buttons {
+      margin-top: 32px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 8px;
+      padding: 13px 22px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .primary {
+      background: #2563eb;
+      color: white;
+    }
+
+    .secondary {
+      background: white;
+      color: #0f172a;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 48px 22px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+    }
+
+    h3 {
+      font-size: 24px;
+      margin-top: 0;
+      color: #0f172a;
+    }
+
+    .card ul {
+      padding-left: 20px;
+    }
+
+    .architecture {
+      margin-top: 40px;
+    }
+
+    .architecture img {
+      width: 100%;
+      border-radius: 18px;
+      border: 1px solid #cbd5e1;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+      background: white;
+    }
+
+    .team {
+      margin-top: 40px;
+    }
+
+    .member {
+      padding: 18px;
+      border-radius: 14px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      margin-bottom: 14px;
+    }
+
+    .member strong {
+      display: block;
+      font-size: 18px;
+    }
+
+    .tech span {
+      display: inline-block;
+      background: #e0ecff;
+      color: #1e3a8a;
+      padding: 8px 12px;
+      border-radius: 999px;
+      margin: 6px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    footer {
+      background: #020617;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 35px 20px;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #93c5fd;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="badge">MS AI Showcase Team Project</div>
+    <h1>ReCert</h1>
+    <h2>Automated Certificate Lifecycle Management System</h2>
+    <p>
+      ReCert helps automate certificate monitoring, renewal workflows, validation,
+      logging, and status tracking using a full-stack dashboard and workflow automation engine.
+    </p>
+
+    <div class="buttons">
+      <a class="primary" href="YOUR_DEMO_VIDEO_LINK_HERE" target="_blank">Watch Demo</a>
+      <a class="secondary" href="https://github.com/TBrashears12/ReCert" target="_blank">GitHub Repo</a>
+      <a class="secondary" href="YOUR_TEAM_RESUME_FOLDER_LINK_HERE" target="_blank">Team Resumes</a>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Problem</h3>
+        <p>
+          Certificate renewals are often manual, repetitive, and easy to miss.
+          Failed or expired certificates can interrupt services and create security risks.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Solution</h3>
+        <p>
+          ReCert automates certificate lifecycle management by checking renewal windows,
+          routing certificates through renewal workflows, and updating statuses after validation.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Key Features</h3>
+        <ul>
+          <li>Certificate expiration tracking</li>
+          <li>Renewal window detection</li>
+          <li>CSR and CA workflow simulation</li>
+          <li>Paused state for external delays</li>
+          <li>Success and failure logging</li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="architecture">
+      <div class="card">
+        <h3>Logical Architecture</h3>
+        <p>
+          The workflow begins with a scheduler checking the certificate inventory.
+          Certificates inside the renewal window move through renewal, validation,
+          success, or failure paths. External CA delays are handled using a paused state.
+        </p>
+
+        <img src="architecture.png" alt="ReCert Logical Architecture Diagram" />
+      </div>
+    </section>
+
+    <section class="team">
+      <div class="card">
+        <h3>Team</h3>
+
+        <div class="member">
+          <strong>Tyler Brashears</strong>
+          Project Manager
+        </div>
+
+        <div class="member">
+          <strong>Abdurrahman Oyediran</strong>
+          Automation & Workflow Developer
+        </div>
+
+        <div class="member">
+          <strong>Brady Moore</strong>
+          Frontend Developer
+        </div>
+
+        <div class="member">
+          <strong>Kevon Scales</strong>
+          Backend Developer
+        </div>
+
+        <div class="member">
+          <strong>Nichaela Barella</strong>
+          Automation Logic
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="card">
+        <h3>Tech Stack</h3>
+        <div class="tech">
+          <span>Python</span>
+          <span>FastAPI</span>
+          <span>React</span>
+          <span>REST APIs</span>
+          <span>JSON Persistence</span>
+          <span>Git/GitHub</span>
+          <span>Workflow Automation</span>
+          <span>System Design</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>ReCert Team | MS AI Showcase</p>
+    <p>Scan the booth QR code to view project details, demo, GitHub, and team resumes.</p>
+  </footer>
+
+</body>
+</html>
