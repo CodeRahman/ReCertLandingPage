@@ -28,20 +28,20 @@ This landing page serves as a central hub for:
 ## Live Demo
 
 Access the landing page here:
-[INSERT NETLIFY LINK]
+[Landing Page](https://recertlandingpage.netlify.app)
 
 ## Main Project Repository
 
 ReCert System Repository:
-[INSERT MAIN REPO LINK]
+[GitHub Repo](https://github.com/TBrashears12/ReCert)
 
 ## Team
 
+- Tyler Brashears - Project Manager
 - Abdurrahman Oyediran – Automation & Workflow Developer
-- Brady [Last Name] – Frontend Developer
-- Kevon [Last Name] – Backend Developer
-- Allen [Last Name] – Backend Developer
-- Nichaela [Last Name] – Automation Logic
+- Brady Moore – Frontend Developer
+- Kevon Scales – Backend Developer
+- Nichaela Barella – Automation & Workflow Developer
 
 ## Purpose
 
